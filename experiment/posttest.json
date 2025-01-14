@@ -1,39 +1,114 @@
 {
-  "version": 2.0,
-  "questions": [
-    {
-      "question": "This is a Sample Question 1?",
-      "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
-      },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
-      },
-      "correctAnswer": "a",
-      "difficulty": "beginner"
-    },
-    {
-      "question": "This is a Sample Question 2?",
-      "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
-      },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
-      },
-      "correctAnswer": "c",
-      "difficulty": "beginner"
-    }
-  ]
+    "version": 2,
+    "questions": [
+        {
+            "question": "What is the primary objective of estimation in a process instrumentation project?",
+            "answers": {
+                "a": "To determine the project scope and objectives ",
+                "b": "To allocate resources and budget to the project ",
+                "c": "To estimate the cost and duration of the project ",
+                "d": "To monitor and control the project progress"
+            },
+            "correctAnswer": "c",
+            "difficulty": "beginner"
+        },
+        {
+            "question": "Which of the following is a key input to the estimation process in a process instrumentation project?",
+            "answers": {
+                "a": "Project scope and objectives ",
+                "b": "Process flow diagram (PFD) ",
+                "c": "Instrumentation and control system design ",
+                "d": "All mentioned"
+            },
+            "correctAnswer": "d",
+            "difficulty": "beginner"
+        },
+        {
+            "question": "What is the purpose of estimating the cost of instrumentation and control systems in a process instrumentation project?",
+            "answers": {
+                "a": "To determine the project scope and objectives ",
+                "b": "To allocate resources and budget to the project ",
+                "c": "To estimate the total project cost ",
+                "d": "To identify potential cost savings opportunities"
+            },
+            "correctAnswer": "c",
+            "difficulty": "beginner"
+        },
+        {
+            "question": "Which of the following is a common estimation technique used in process instrumentation projects?",
+            "answers": {
+                "a": "Bottom-up estimation ",
+                "b": "Top-down estimation ",
+                "c": "Analogous estimation ",
+                "d": "All mentioned"
+            },
+            "correctAnswer": "d",
+            "difficulty": "beginner"
+        },
+        {
+            "question": "What is the purpose of estimating the duration of activities in a process instrumentation project?",
+            "answers": {
+                "a": "To determine the project scope and objectives ",
+                "b": "To allocate resources and budget to the project ",
+                "c": "To develop a project schedule and timeline ",
+                "d": "To identify potential delays and bottlenecks"
+            },
+            "correctAnswer": "c",
+            "difficulty": "beginner"
+        },
+        {
+            "question": "How do you account for uncertainties and risks in estimation of a process instrumentation project?",
+            "answers": {
+                "a": "By using a contingency fund ",
+                "b": "By adding a risk premium to the estimated cost ",
+                "c": "By identifying and mitigating potential risks ",
+                "d": "By ignoring uncertainties and risks"
+            },
+            "correctAnswer": "b",
+            "difficulty": "beginner"
+        },
+        {
+            "question": "What is the purpose of estimating the cost of labor and materials in a process instrumentation project?",
+            "answers": {
+                "a": "To determine the project scope and objectives ",
+                "b": "To allocate resources and budget to the project ",
+                "c": "To estimate the total project cost "
+            },
+            "correctAnswer": "c",
+            "difficulty": "beginner"
+        },
+        {
+            "question": "Which of the following is a key output of the estimation process in a process instrumentation project?",
+            "answers": {
+                "a": "Project scope and objectives",
+                "b": "Process flow diagram (PFD) ",
+                "c": "Instrumentation and control system design ",
+                "d": "Estimated project cost and duration"
+            },
+            "correctAnswer": "d",
+            "difficulty": "beginner"
+        },
+        {
+            "question": "How do you validate the estimation results in a process instrumentation project?",
+            "answers": {
+                "a": "By comparing with industry benchmarks and standards ",
+                "b": "By reviewing and verifying the estimation methodology ",
+                "c": "By conducting a sensitivity analysis ",
+                "d": "By ignoring the estimation results"
+            },
+            "correctAnswer": "b",
+            "difficulty": "beginner"
+        },
+        {
+            "question": "What is the benefit of estimation in a process instrumentation project?",
+            "answers": {
+                "a": "It helps to determine the project scope and objectives ",
+                "b": "It helps to allocate resources and budget to the project ",
+                "c": "It helps to estimate the cost and duration of the project ",
+                "d": "It helps to identify potential cost savings opportunities"
+            },
+            "correctAnswer": "c",
+            "difficulty": "beginner"
+        }
+    ]
 }
