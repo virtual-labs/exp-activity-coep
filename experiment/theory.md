@@ -1,3 +1,5 @@
+## Theory
+
 Activity Charts for Process Instrumentation Projects: Activity charts are a critical tool in process instrumentation projects, as they help to visualize and manage the project schedule, resources, and dependencies. In this note, we will outline the steps involved in carrying out an activity chart for a process instrumentation project and discuss the effects of ill preparation.
 
 #### Step 1: Project Definition and Scope
