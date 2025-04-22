@@ -7,10 +7,11 @@
 -	Click on the "Mimic" button to view the simulation execution.
 -	Then, click on "Next Level" to proceed.
 
-#### 3.	Define Major Activities
--	In this step, enter the number of sequences for the major activities in chronological sequence.
+#### 3.	Define Major Activity
+-	In this step, enter the number of sequences for the major activity in chronological sequence.
 
-#### 4.	Repeat Steps for Activities 3 to 6
+#### 4.	Sub - activities 1 to 4
+-	In this stage, enter the number of sequences for the each sub activity in chronological sequence.
 
 #### 5.	Set Time Durations
 -	In the Time Activities step, enter the required time (in days) for each activity.
