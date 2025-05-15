@@ -53,11 +53,11 @@
 <!--         </div> -->
 	<div  class="row container-fluid" id="buttonDiv" >	
 		<div  class="col-sm-12" > 
- 			<h5 id="counter" class=" btn1 timerStyle" >00:00:00</h5> 
+ 			<h5 id="counter" class=" btn1 timerStyle" hidden>00:00:00</h5> 
 <!-- 		 <button type="button" id="tagDetails" class="btn btn-danger btn1" data-toggle="modal" data-target="#proStr"><b>Tag Details </b></button> -->
 <!-- 	     <button type="button" id="simDemo" class="btn btn-danger btn1" data-toggle="modal" data-target="#proStr"><b>Problem statement</b> </button> -->
 		    <button type="button" id="procedure" class="btn btn-danger btn1 button1" data-toggle="modal" data-target="#proStr" hidden><b>Procedure </b></button>
-		    <button type="button" class="btn btn-danger btn1 button1"  id="report" style="margin-top:10px;"  hidden>Download report </button> 
+		    <button type="button" class="btn btn-danger btn1 button1"  id="report" style="margin-top:10px;background-color:teal"  hidden>Download report </button> 
 	     </div>
 	     
 	   
@@ -106,16 +106,26 @@
             <div class="col-md-4" style="border-style: solid;padding:5px ;margin:5px;">
                 <div class="card p-3">
                     <h5 class="text-center">SPRAY DRYER</h5>
-                    <img src="images/spray12.PNG" class="img-fluid rounded">
-                    <button class="btn btn-success " id="spray" style="float:right;margin: 10px;background-color:teal;" data-toggle="modal" data-target="#refMimicModal" >MIMIC</button>
+                    <center><video poster="images/spray12.PNG" id="simVideo" width="100%" controls controlsList="nodownload">
+					<source src="images/spray.mp4" type="video/mp4" >
+					Your browser does not support the video tag.
+					</video></center>
+					<button class="btn btn-success " id="acitivite" style="float:right;margin: 10px;background-color:teal;" data-dismiss="modal">NEXT LEVEL</button>
+<!--                     <img src="images/spray12.PNG" class="img-fluid rounded"> -->
+<!--                     <button class="btn btn-success " id="spray" style="float:right;margin: 10px;background-color:teal;" data-toggle="modal" data-target="#refMimicModal" >MIMIC</button> -->
                
                 </div>
             </div>
             <div class="col-md-4" style="border-style: solid;padding:5px ;margin:5px;">
                 <div class="card p-3">
                     <h5 class="text-center">FLOW METER</h5>
-                    <img src="images/flowSensor.PNG" class="img-fluid rounded">
-                    <button class="btn btn-success " id="flow" style="float:right;margin: 10px;background-color:teal;"data-toggle="modal" data-target="#refMimicModal" >MIMIC</button>
+                    <center><video poster="images/flowSensor.PNG"  id="simVideo" width="100%" controls controlsList="nodownload">
+					  <source src="images/flowMeter.mp4" type="video/mp4" >
+					  Your browser does not support the video tag.
+					</video></center>
+					<button class="btn btn-success " id="activite" style="float:right;margin: 10px;background-color:teal;" data-dismiss="modal">NEXT LEVEL</button>
+<!--                     <img src="images/flowSensor.PNG" class="img-fluid rounded"> -->
+<!--                     <button class="btn btn-success " id="flow" style="float:right;margin: 10px;background-color:teal;"data-toggle="modal" data-target="#refMimicModal" >MIMIC</button> -->
                
                 </div>
             </div>
@@ -187,6 +197,9 @@ Copyrights &copy; COEPTECH - Virtual Labs
 <script src="src/timer.js"></script>
 
 <script>
+$("#activite, #acitivite").click(function () {
+	mainActivites();
+});
 
 $( document ).ready(function() {
 	TimeVerifyCall
@@ -218,31 +231,29 @@ $("#coepLogo").click(function(evt) {
 	 $('#coepLogo').off('click');
 });
 
-$('#report').on('click', function() {
-<!--			$('#report').prop("hidden",true);-->
-		    html2canvas(document.querySelector("#mainDiv")).then(canvas => {
-		        // Append the screenshot canvas to the body
-		        document.body.appendChild(canvas);
-		        $("canvas").css("display","none");
-		        // Optionally save the screenshot as an image
-		        var link = document.createElement('a');
-		        link.download = 'Activity_chart_report.png';
-		        link.href = canvas.toDataURL();
-		        link.click();
-		    });
-		});
+// $('#report').on('click', function() {
+// <!--			$('#report').prop("hidden",true);-->
+// 		    html2canvas(document.querySelector("#mainDiv")).then(canvas => {
+// 		        // Append the screenshot canvas to the body
+// 		        document.body.appendChild(canvas);
+// 		        $("canvas").css("display","none");
+// 		        // Optionally save the screenshot as an image
+// 		        var link = document.createElement('a');
+// 		        link.download = 'Activity_chart_report.png';
+// 		        link.href = canvas.toDataURL();
+// 		        link.click();
+// 		    });
+// 		});
 
 </script>
   <script>
   $("#flow").click(function () {
-		var htm=`
-		<center><video id="simVideo" width="90%" controls>
-  <source src="images/flowMeter.mp4" type="video/mp4" >
-  Your browser does not support the video tag.
-</video></center>
-<button class="btn btn-success " id="activite" style="float:right;margin: 10px;background-color:teal;" data-dismiss="modal">NEXT LEVEL</button>
-
-		`;
+		var htm='<center><video id="simVideo" width="90%" controls>'
+			+'<source src="images/flowMeter.mp4" type="video/mp4" >'
+			+'Your browser does not support the video tag.'
+			+'</video></center>'
+			+'<button class="btn btn-success " id="activite" style="float:right;margin: 10px;background-color:teal;" data-dismiss="modal">NEXT LEVEL</button>';
+			
 		$("#refMimicBody").html(htm);
 		$("#activite").click(function () {
 			

@@ -3,22 +3,16 @@ var alarmflg = 0;
 var timerMasterJson={};
 var resultJson={};
 function mainActivites()
-{
-        timerMasterJson.mainActivites=$("#counter").text();
-	console.log(timerMasterJson);
-	seconds = 0;
-	  updateCounter();
+{seconds = 0;
+updateCounter();
+$("#counter").prop("hidden",false);
+        
 	//$("#footerModal").empty();
 	  
-	  
-	  
-	
-	  
-	$("#Header").html("<center><span>MAIN ACTIVITES</span></center>");
+	$("#Header").html("<center><span>Please mark the chronological sequence of Major activities to be carried out for the project</span></center>");
 	 function shuffleArray(array) {
             return array.sort(() => Math.random() - 0.5);
         }
-
         // Shuffle statements
         let shuffledData = shuffleArray([...jsonData1.statements]);
 
@@ -39,7 +33,7 @@ function mainActivites()
 		htm='<div class="row">'
 	// +'<center><h5>FAULT OF EVENTS</h5></center>'
 	 +'<div class="col-sm-12 " id="">'
-	+'<table>'
+	+'<table style="    margin-bottom: 100px;">'
 	+'<thead>'
 	+'<tr>'
 	+' <th>ACTIVITIES </th>'
@@ -126,7 +120,7 @@ function mainActivites()
 		$("#refMimic").click(function () {
 			var htm=`
 			<center><video id="simVideo" width="90%" controls>
-	    <source src="images/boilerFaultalamVideo.mp4" type="video/mp4" >
+	    <source src="../resources/vlabs/elctricalLabs/PMEnggLab1/exp8/images/boilerFaultalamVideo.mp4" type="video/mp4" >
 	    Your browser does not support the video tag.
 	</video></center>
 			`;
@@ -300,7 +294,7 @@ $(document).ready(function () {
     function stdtable(){
 
 		var htm=`
-		 <table class="table table-striped">
+		 <table class="table table-striped" style="    margin-bottom: 100px;">
 			    <thead>
 			      <tr class="table-info">
 			        <th>Sequence Number</th>
