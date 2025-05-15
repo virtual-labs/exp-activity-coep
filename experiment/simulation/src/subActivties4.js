@@ -2,13 +2,13 @@ var subActivties4Count=0;
 
 function subActivties4()
 {
-        timerMasterJson.subActivties4=$("#counter").text();
+	timerMasterJson.subActivties3=$("#counter").text();
 	console.log(timerMasterJson);
 	seconds = 0;
 	  updateCounter();
-	//$("#footerModal").empty();
+	
 	  
-	$("#Header").html("<center>SUB ACTIVITES - 4</center>");
+	$("#Header").html("<center>Sub Activity-4 : Mark the activities in chronological sequence.</center>");
 var htm=`
 		
 `;
@@ -47,7 +47,7 @@ var htm=`
        
 	 +' </div>'
 	 +' </div>'
-	+'<table>'
+	+'<table style=" margin-bottom: 100px;">'
 	+'<thead>'
 	+'<tr>'
 	+' <th>ACTIVITIES </th>'
@@ -133,7 +133,7 @@ var htm=`
 		$("#refMimic").click(function () {
 			var htm=`
 			<center><video id="simVideo" width="90%" controls>
-	    <source src="images/boilerFaultalamVideo.mp4" type="video/mp4" >
+	    <source src="../resources/vlabs/elctricalLabs/PMEnggLab1/exp8/images/boilerFaultalamVideo.mp4" type="video/mp4" >
 	    Your browser does not support the video tag.
 	</video></center>
 			`;
@@ -309,7 +309,7 @@ $(document).ready(function () {
        
 	  </div>
 	 </div>
-		 <table class="table table-striped">
+		 <table class="table table-striped" style="    margin-bottom: 100px;">
 			    <thead>
 			      <tr class="table-info">
 			        <th>Sequence Number</th>

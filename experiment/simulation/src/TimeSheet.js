@@ -3,10 +3,13 @@ var timeSheetCount = 0;
 var remainingAttempts = 4; // Overall attempts
 
 function TimeVerifyCall() {
-    timerMasterJson.activtiesTime = $("#counter").text();
-    console.log(timerMasterJson);
-    seconds = 0;
-    updateCounter();
+	//$("#footerModal").empty();   
+	timerMasterJson.subActivties4=$("#counter").text();
+	console.log(timerMasterJson);
+	seconds = 0;
+	  updateCounter();
+	//$("#footerModal").empty();
+   
     $("#Header").html("<center>TIME ACTIVITES</center>");
     var htm = `
         <div class="row" >
@@ -143,7 +146,7 @@ function TimeVerifyCall() {
 
         // If basic validation fails, show message but don't reduce attempts
         if (validationError) {
-            showMessage("❌ Please fill all fields with valid numbers!", "red");
+            showMessage("Please fill all fields with valid numbers!", "brown");
             return;
         }
 
@@ -152,17 +155,17 @@ function TimeVerifyCall() {
             if (remainingAttempts > 1) {
                 remainingAttempts -= 1;
               
-                showMessage(`⚠ Answers are incorrect! ${remainingAttempts}<br> attempts remaining. Attempts left: ${remainingAttempts}`, "red");
+                showMessage(`Answers are incorrect! ${remainingAttempts}<br> attempts remaining. Attempts left: ${remainingAttempts}`, "brown");
             } else {
                 remainingAttempts = 0;
                 $(".validate-input").prop("disabled", true);
                 $("#attemptsMessage").text("No attempts left").css("color", "black");
                 $("#result").prop("disabled", false);
                 renderFinalTable();
-                showMessage("❌ No attempts left! Correct values are now displayed.", "red");
+                showMessage("No attempts left! Correct values are now displayed.", "red");
             }
         } else {
-            showMessage("✅ All answers are correct! You can proceed to the next step.", "green");
+            showMessage("All answers are correct! You can proceed to the next step.", "green");
         }
     });
 

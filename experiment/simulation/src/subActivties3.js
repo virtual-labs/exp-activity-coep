@@ -2,13 +2,14 @@ var subActivties3Count=0;
 
 function subActivties3()
 {
-        timerMasterJson.subActivties3=$("#counter").text();
+	timerMasterJson.subActivties2=$("#counter").text();
 	console.log(timerMasterJson);
 	seconds = 0;
 	  updateCounter();
 	//$("#footerModal").empty();
+	
 	  
-	$("#Header").html("<center>SUB ACTIVITES - 3</center>");
+	$("#Header").html("<center>Sub Activity-3 : Mark the activities in chronological sequence.</center>");
 var htm=`
 		
 `;
@@ -47,7 +48,7 @@ var htm=`
        
 	 +' </div>'
 	 +' </div>'
-	+'<table>'
+	+'<table style=" margin-bottom: 100px;">'
 	+'<thead>'
 	+'<tr>'
 	+' <th>ACTIVITIES </th>'
@@ -133,7 +134,7 @@ var htm=`
 		$("#refMimic").click(function () {
 			var htm=`
 			<center><video id="simVideo" width="90%" controls>
-	    <source src="images/boilerFaultalamVideo.mp4" type="video/mp4" >
+	    <source src="../resources/vlabs/elctricalLabs/PMEnggLab1/exp8/images/boilerFaultalamVideo.mp4" type="video/mp4" >
 	    Your browser does not support the video tag.
 	</video></center>
 			`;
@@ -312,7 +313,7 @@ $(document).ready(function () {
 	  <h5 class="text-center" style="    color: #297076;font-weight: 900;font-family: emoji;" id=""> 3. START THE PROCUREMENT IN CHRONOLOGICAL SEQUENCE AND BASED ON LONG DELIVERY TIME (LONG LEAD)</h5>
        </div>
 	  </div>
-		 <table class="table table-striped">
+		 <table class="table table-striped" style="    margin-bottom: 100px;">
 			    <thead>
 			     <tr class="table-info">
 			        <th>Sequence Number</th>
