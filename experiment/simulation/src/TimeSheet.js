@@ -5,7 +5,7 @@ var remainingAttempts = 4; // Overall attempts
 function TimeVerifyCall() {
 	//$("#footerModal").empty();   
 	timerMasterJson.subActivties4=$("#counter").text();
-	console.log(timerMasterJson);
+	//console.log(timerMasterJson);
 	seconds = 0;
 	  updateCounter();
 	//$("#footerModal").empty();
@@ -25,8 +25,8 @@ function TimeVerifyCall() {
                         <tr>
                             <th>Activity Number</th>
                             <th>Activity Details</th>
-                            <th>Spray Dryer with Utilities in hours</th>
-                            <th>Flow Calibration with Utilities in hours</th>
+                            <th>Spray Dryer with Utilities (in Hrs)</th>
+                            <th>Flow Calibration with Utilities (in Hrs)</th>
                         </tr>
                     </thead>
                     <tbody id="tableBody"></tbody>
@@ -59,7 +59,7 @@ function TimeVerifyCall() {
     
     $("#result").click(function(){
 	resultJson.timeSheetCount=timeSheetCount;
-	console.log(resultJson);
+	//console.log(resultJson);
 	result();	
 	});
     
@@ -162,7 +162,7 @@ function TimeVerifyCall() {
                 $("#attemptsMessage").text("No attempts left").css("color", "black");
                 $("#result").prop("disabled", false);
                 renderFinalTable();
-                showMessage("No attempts left! Correct values are now displayed.", "red");
+                showMessage(`No attempts left! Correct values are now displayed. <br> Go for Result page once done by clicking on Result page.`, "red");
             }
         } else {
             showMessage("All answers are correct! You can proceed to the next step.", "green");
@@ -178,8 +178,8 @@ function TimeVerifyCall() {
                     <tr>
                         <th>Activity Number</th>
                         <th>Activity Details</th>
-                        <th>Spray Dryer with Utilities</th>
-                        <th>Flow Calibration with Utilities</th>
+                        <th>Spray Dryer with Utilities (in Hrs)</th>
+                        <th>Flow Calibration with Utilities (in Hrs)</th>
                     </tr>
                 </thead>
                 <tbody>`;
