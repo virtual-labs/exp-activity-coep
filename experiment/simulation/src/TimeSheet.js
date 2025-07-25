@@ -10,7 +10,7 @@ function TimeVerifyCall() {
 	  updateCounter();
 	//$("#footerModal").empty();
    
-    $("#Header").html("<center>TIME ACTIVITES</center>");
+    $("#Header").html("<center>TIME ACTIVITIES</center>");
     var htm = `
         <div class="row" >
          <div class="col-sm-2">
@@ -25,8 +25,8 @@ function TimeVerifyCall() {
                         <tr>
                             <th>Activity Number</th>
                             <th>Activity Details</th>
-                            <th>Spray Dryer with Utilities</th>
-                            <th>Flow Calibration with Utilities</th>
+                            <th>Spray Dryer with Utilities in hours</th>
+                            <th>Flow Calibration with Utilities in hours</th>
                         </tr>
                     </thead>
                     <tbody id="tableBody"></tbody>
@@ -91,7 +91,7 @@ function TimeVerifyCall() {
 
         tableBody.append(`
             <tr class="font-weight-bold" >
-                <td colspan="2"  style="    color: #2c5881; text-align: left;">Total Time : ${activity.total_time.statement}</td>
+                <td colspan="2"  style="    color: #2c5881; text-align: left;">${activity.total_time.statement}</td>
                 <td>
                     <input type="text" class="form-control validate-input" data-correct="${activity.total_time.spray_dryer_with_utilities}">
                 </td>
@@ -104,7 +104,7 @@ function TimeVerifyCall() {
     
     tableBody.append(`
             <tr class="font-weight-bold" >
-                <td colspan="2"  style="color:brown; text-align: left;">total_time_required : ${timeJson.total_time_required2.statement}</td>
+                <td colspan="2"  style="color:brown; text-align: left;">${timeJson.total_time_required2.statement}</td>
                 <td>
                     <input type="text" class="form-control validate-input" data-correct="${timeJson.total_time_required2.flow_calibration_with_utilities}">
                 </td>
