@@ -3,7 +3,7 @@ var subActivties1Count=0;
 function subActivties1()
 {
 	timerMasterJson.mainActivites=$("#counter").text();
-	console.log(timerMasterJson);
+	//console.log(timerMasterJson);
 	seconds = 0;
 	  updateCounter();
 	
